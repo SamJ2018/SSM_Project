@@ -8,4 +8,6 @@ public interface ProductService {
 
     //查询所有商品信息
     public List<Product> findAll() throws Exception;
+
+    void saveProduct(Product product) throws Exception;
 }

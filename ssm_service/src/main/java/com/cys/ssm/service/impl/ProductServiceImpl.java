@@ -24,4 +24,9 @@ public class ProductServiceImpl implements ProductService {
 
         return list;
     }
+
+    @Override
+    public void saveProduct(Product product) throws Exception {
+        productDao.saveProduct(product);
+    }
 }

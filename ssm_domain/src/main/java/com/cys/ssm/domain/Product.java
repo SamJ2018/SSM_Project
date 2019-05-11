@@ -1,6 +1,7 @@
 package com.cys.ssm.domain;
 
 import com.cys.ssm.utils.DateUtils;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -10,6 +11,8 @@ public class Product {
     private String productNum; // 编号 唯一
     private String productName; // 名称
     private String cityName; // 出发城市
+    /*解决类型转换问题 缺陷：局部，只能处理一个*/
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date departureTime; // 出发时间
     private String departureTimeStr; //状态描述，与数据库无关
     private double productPrice; // 产品价格

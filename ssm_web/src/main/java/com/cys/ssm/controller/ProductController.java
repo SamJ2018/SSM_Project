@@ -16,6 +16,25 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    /**
+     * 添加产品
+     * @param product
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping("/save.do")
+    public String save(Product product) throws Exception {
+        productService.saveProduct(product);
+        //重新查询一次
+        return "redirect:findAll.do";
+    }
+
+    /**
+     * 查询全部产品操作
+     *
+     * @return 视图
+     * @throws Exception
+     */
     @RequestMapping("/findAll.do")
     public ModelAndView findAll() throws Exception {
 
