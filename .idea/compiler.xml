@@ -6,12 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ssm_web" />
-        <module name="ssm_domain" />
-        <module name="ssm_service" />
         <module name="ssm_utils" />
         <module name="ssm_dao" />
+        <module name="ssm_service" />
+        <module name="ssm_domain" />
+        <module name="ssm_web" />
+        <module name="ThinkingInJava" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SSM项目" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

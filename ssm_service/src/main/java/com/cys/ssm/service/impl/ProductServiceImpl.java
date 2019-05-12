@@ -20,7 +20,6 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> findAll() throws Exception {
 
         List<Product> list = productDao.findAll();
-        System.out.println(list);
 
         return list;
     }
